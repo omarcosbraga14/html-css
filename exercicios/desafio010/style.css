@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "idroid";
+    src: url(fontes/idroid.otf);
+}
+
+header {
+    background-image: linear-gradient(to bottom, #81be8a, #205328);
+    box-shadow: 2px 2px 10px black;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+}
+
+.subtitle {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+#menu {
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+#menu > li {
+    margin-right: 100px;
+    color: white;
+    text-align: center;
+    padding: 10px 3px 10px 3px;
+    border-radius: 10%
+}
+
+#menu > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu > li:hover {
+    background-color: rgb(66, 112, 66);
+}
+
+main > p {
+    text-indent: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.list > p {
+    text-indent: 50px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.ending > p {
+    text-indent: 50px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1, h2 {
+    font-family: idroid;
+    color: #205328;
+}
+
+h2 {
+    background-image: linear-gradient(to right, #b5eebd, #ffffff);
+}
+
+body {
+    margin: 10px 200px;
+    padding: 10px;
+    background: #81be8aab;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.robots {
+    text-align: center;
+}
+
+.face {
+    text-align: center;
+}
+
+.android {
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+    background-color: #205328;
+    padding: 20px;
+    margin: -10px;
+}
+
+h3 {
+    color: white;
+    background-color: #388f45;
+    font-weight: bold;
+    padding: 10px;
+    margin: -5px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.list {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    box-shadow: 2px 2px 10px black;
+    padding: 20px 50px 20px 50px;
+    margin-top: 1px;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.list p {
+    text-indent: 50px;
+}
+
+.version {
+    list-style: "✔ ";
+}
+
+.inside {
+    background-color: #a3f0af;
+    border: 20px white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+footer {
+    color: white;
+    background-color: #205328;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 10px black;
+    margin-top: 20px;
+    margin-left: -200px;
+    margin-right: -200px;
+}
