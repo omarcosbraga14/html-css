@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;  
+            position: relative;          
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lightcyan;
+        }
+        tbody tr:nth-child(even) {
+            background-color: lightpink;
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--
+        ANATOMIA DE TABELAS GRANDES
+            TABLE
+                CAPTION
+                THEAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">23.000.000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">23.000.000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">2.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">3.000.000</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">23.000.000</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">235.000.000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">20.000.000</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">5.000.000</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">2.000.000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">23.000.000</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">400.000</td>
+            </tr>
+            <tr>
+                <td>Brasilia</td>
+                <td class="num">7.000.000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">400.000</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">200.000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">100.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">184.000.000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- TEXTO COLOCADO SOMENTE PARA TESTAR O EFEITO DO BLOQUEIO DO TÍTULO DA TABELA (ESTADO - POPULAÇÃO)-->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod corrupti, cupiditate esse quaerat dolor qui eligendi optio omnis eveniet recusandae. Aut laudantium quaerat delectus, asperiores dolorem maxime architecto aperiam repellat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem cum aliquam, nisi eos veritatis voluptatibus velit sint dicta atque optio quo similique distinctio minus porro unde vitae harum alias laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus quis obcaecati reiciendis distinctio eius illum nemo, voluptates facere totam? Officia odit provident impedit tenetur itaque enim doloremque temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quasi molestiae, fuga nemo iusto suscipit atque esse cupiditate consectetur quo? Facere modi mollitia deserunt maxime quidem. Consequatur, vel. Incidunt, doloremque?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod corrupti, cupiditate esse quaerat dolor qui eligendi optio omnis eveniet recusandae. Aut laudantium quaerat delectus, asperiores dolorem maxime architecto aperiam repellat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem cum aliquam, nisi eos veritatis voluptatibus velit sint dicta atque optio quo similique distinctio minus porro unde vitae harum alias laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus quis obcaecati reiciendis distinctio eius illum nemo, voluptates facere totam? Officia odit provident impedit tenetur itaque enim doloremque temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quasi molestiae, fuga nemo iusto suscipit atque esse cupiditate consectetur quo? Facere modi mollitia deserunt maxime quidem. Consequatur, vel. Incidunt, doloremque?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod corrupti, cupiditate esse quaerat dolor qui eligendi optio omnis eveniet recusandae. Aut laudantium quaerat delectus, asperiores dolorem maxime architecto aperiam repellat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem cum aliquam, nisi eos veritatis voluptatibus velit sint dicta atque optio quo similique distinctio minus porro unde vitae harum alias laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus quis obcaecati reiciendis distinctio eius illum nemo, voluptates facere totam? Officia odit provident impedit tenetur itaque enim doloremque temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quasi molestiae, fuga nemo iusto suscipit atque esse cupiditate consectetur quo? Facere modi mollitia deserunt maxime quidem. Consequatur, vel. Incidunt, doloremque?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod corrupti, cupiditate esse quaerat dolor qui eligendi optio omnis eveniet recusandae. Aut laudantium quaerat delectus, asperiores dolorem maxime architecto aperiam repellat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem cum aliquam, nisi eos veritatis voluptatibus velit sint dicta atque optio quo similique distinctio minus porro unde vitae harum alias laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus quis obcaecati reiciendis distinctio eius illum nemo, voluptates facere totam? Officia odit provident impedit tenetur itaque enim doloremque temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quasi molestiae, fuga nemo iusto suscipit atque esse cupiditate consectetur quo? Facere modi mollitia deserunt maxime quidem. Consequatur, vel. Incidunt, doloremque?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod corrupti, cupiditate esse quaerat dolor qui eligendi optio omnis eveniet recusandae. Aut laudantium quaerat delectus, asperiores dolorem maxime architecto aperiam repellat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem cum aliquam, nisi eos veritatis voluptatibus velit sint dicta atque optio quo similique distinctio minus porro unde vitae harum alias laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus quis obcaecati reiciendis distinctio eius illum nemo, voluptates facere totam? Officia odit provident impedit tenetur itaque enim doloremque temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quasi molestiae, fuga nemo iusto suscipit atque esse cupiditate consectetur quo? Facere modi mollitia deserunt maxime quidem. Consequatur, vel. Incidunt, doloremque?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod corrupti, cupiditate esse quaerat dolor qui eligendi optio omnis eveniet recusandae. Aut laudantium quaerat delectus, asperiores dolorem maxime architecto aperiam repellat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem cum aliquam, nisi eos veritatis voluptatibus velit sint dicta atque optio quo similique distinctio minus porro unde vitae harum alias laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus quis obcaecati reiciendis distinctio eius illum nemo, voluptates facere totam? Officia odit provident impedit tenetur itaque enim doloremque temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quasi molestiae, fuga nemo iusto suscipit atque esse cupiditate consectetur quo? Facere modi mollitia deserunt maxime quidem. Consequatur, vel. Incidunt, doloremque?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod corrupti, cupiditate esse quaerat dolor qui eligendi optio omnis eveniet recusandae. Aut laudantium quaerat delectus, asperiores dolorem maxime architecto aperiam repellat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem cum aliquam, nisi eos veritatis voluptatibus velit sint dicta atque optio quo similique distinctio minus porro unde vitae harum alias laudantium! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus quis obcaecati reiciendis distinctio eius illum nemo, voluptates facere totam? Officia odit provident impedit tenetur itaque enim doloremque temporibus maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quasi molestiae, fuga nemo iusto suscipit atque esse cupiditate consectetur quo? Facere modi mollitia deserunt maxime quidem. Consequatur, vel. Incidunt, doloremque?</p>
+</body>
+</html>
